@@ -5,5 +5,5 @@
   - course.yaml
   tasks:
   - name: print course information
-    ansible.builtin.ping:
+    ansible.builtin.debug:
       msg: "hello"
