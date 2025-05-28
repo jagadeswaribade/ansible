@@ -1,0 +1,9 @@
+- name: devops with aws
+  hosts: local
+  connection: local
+  vars_files:
+    - course.yaml
+  tasks:
+  - name: print course information
+  ansible.builtin.ping:
+    msg: "hello"
