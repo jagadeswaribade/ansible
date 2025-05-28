@@ -1,0 +1,13 @@
+- name: play variables
+  hosts: local
+  connection: local
+  vars:
+    course: ansible
+    hours: 3hrs
+    trainer: siva
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "ur course name is {{course}}, number of hrs: {{hours}}, trainer name is: {{trainer}}"
+
+   
