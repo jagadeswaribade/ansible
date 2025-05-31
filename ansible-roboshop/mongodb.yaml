@@ -14,12 +14,12 @@
 
   - name: enabling the service
     ansible.builtin.service:
-      name: mongodb
+      name: mongod
       enable: yes
 
   - name: starting the service
     ansible.builtin.service:
-      name: mongodb
+      name: mongod
       state: started
 
   - name: allowing remote connections
