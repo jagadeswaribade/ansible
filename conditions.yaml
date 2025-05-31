@@ -1,21 +1,15 @@
-- name: checking the number is greater than or not
+- name: conditions demo
   hosts: local
   connection: local
-  vars_prompt: 
-    name: xxxxx
-    prompt: pls enter the num
-    prompt: NUM
-    private: yes
-  
+  vars:
+    NUMBER: 78
   tasks:
-  - name: printing the small number
+  - name: print if the number is less than or equal to 100
     ansible.builtin.debug:
-      
-      msg: "the number {{NUM}} is less than 10" 
-    when: NUM < 10
-  
-  - name: printing the large num
+      msg: "Given number {{ NUMBER }} is less than or equal to 100"
+    when: NUMBER <= 100
+
+  - name: print if the number is greater than 100
     ansible.builtin.debug:
-      
-      msg: "the number {{NUM}} is greater than 10"
-    when: NUM > 10
+      msg: "Given number {{ NUMBER }} is greater than 100"
+    when: NUMBER > 100
