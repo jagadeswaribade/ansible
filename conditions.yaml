@@ -10,7 +10,6 @@
       msg: "the number {{NUM}} is less than 10" 
     when: NUM < 10
   
-  tasks:
   - name: printing the large num
     ansible.builtin.debug:
       msg: "the number {{NUM}} is greater than 10"
