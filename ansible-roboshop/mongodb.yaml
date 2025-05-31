@@ -1,7 +1,6 @@
 - name: mongodb server installation
   become: yes
   hosts: mongodb
-  connection: local
   tasks:
   - name: copy mongodb
     ansible.builtin.copy:
