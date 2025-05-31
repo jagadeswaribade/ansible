@@ -6,14 +6,14 @@
     DURATION: 3hrs
     IS_LIVE: true
     TOOLS:
-    - ANSIBLE
-    - TERRAFORM
+    - ansile
+    - terraform
     - SHELL 
     CONCEPTS:
-    A_FOR: APPLE
+    A_FOR: "APPLE,aeroplane,ant"
     B_FOR: BALL
     C_FOR: CAR 
   tasks:
-    name: listing all the data types
+  - name: listing all the data types
     ansible.builtin.debug:
-    msg: "the course is {{COURSE}} with time {{DURATION}} session go live is {{IS_LIVE}} and the tools we learn are {{TOOLS}} with the concepts {{CONCEPTS}}"
+      msg: "the course is {{COURSE}} with time {{DURATION}} session go live is {{IS_LIVE}} and the tools we learn are {{TOOLS}} with the concepts {{CONCEPTS}}"
