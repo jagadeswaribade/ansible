@@ -1,0 +1,7 @@
+- name: vars from inv
+  hosts: local
+  connections: local
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "the course i am learning is: {{course}} with the duration of: {{duration}} by the trainer {{trainer}}"
