@@ -10,9 +10,9 @@
     - terraform
     - SHELL 
     CONCEPTS:
-    A_FOR: "APPLE,aeroplane,ant"
-    B_FOR: BALL
-    C_FOR: CAR 
+      A_FOR: "APPLE,aeroplane,ant"
+      B_FOR: BALL
+      C_FOR: CAR 
   tasks:
   - name: listing all the data types
     ansible.builtin.debug:
