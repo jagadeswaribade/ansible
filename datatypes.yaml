@@ -1,0 +1,19 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars: 
+    COURSE: Devosecops
+    DURATION: 3hrs
+    IS_LIVE: true
+    TOOLS:
+    - ANSIBLE
+    - TERRAFORM
+    - SHELL 
+    CONCEPTS:
+    A_FOR: APPLE
+    B_FOR: BALL
+    C_FOR: CAR 
+  tasks:
+    name: listing all the data types
+    ansible.builtin.debug:
+    msg: "the course is {{COURSE}} with time {{DURATION}} session go live is {{IS_LIVE}} and the tools we learn are {{TOOLS}} with the concepts {{CONCEPTS}}"
