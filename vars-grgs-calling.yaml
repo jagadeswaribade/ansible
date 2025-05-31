@@ -1,6 +1,6 @@
 - name: vars from inv
   hosts: local
-  connections: local
+  connection: local
   tasks:
   - name: print course info
     ansible.builtin.debug:
