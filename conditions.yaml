@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NUM: 5
+    NUM: 11
   
   tasks:
   - name: printing the small number
